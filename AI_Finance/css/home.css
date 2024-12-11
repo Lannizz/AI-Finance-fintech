@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    margin: 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-in-out;
+
+}
+
+.content {
+
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+body.show {
+
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+#div-logo {
+
+    margin-top: 20%;
+    margin-bottom: 15%;
+
+}
+
+img {
+    width: 55%;
+    height: 100%;
+}
+
+
+
+.my-font {
+    font-family: "Albert Sans", sans-serif;
+    font-size: clamp(1.5rem, 9vw, 3rem);
+    color: rgb(17, 64, 11);
+    line-height: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgb(71, 71, 71, 0.0);
+    cursor: pointer;
+    transition: text-shadow 0.6s ease-in-out;
+
+}
+
+h1:hover {
+    text-shadow: 2px 2px 9px rgba(81, 255, 0, 0.959);
+
+}
+
+
+botton {
+    margin: 15% auto 5% auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-btn a {
+
+    font-family: "Albert Sans", sans-serif;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, rgb(15, 114, 40), rgb(0, 255, 21), rgb(15, 114, 40));
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 4px 4px 5px rgba(151, 255, 163, 0.3);
+    transition: box-shadow 0.6s ease-in-out;
+    padding: 3% 15%;
+    font-size: 1.3rem;
+
+}
+
+.action-btn a:hover {
+    box-shadow: 8px 8px 10px rgba(1, 83, 12, 0.2);
+    color: white;
+
+}
+
+.div-entrar {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.link {
+    color: inherit;
+    cursor: pointer;
+}
+
+.div-entrar a {
+    text-decoration: none;
+    font-family: "Albert Sans", sans-serif;
+    font-size: 1.5rem;
+    color: rgb(3, 63, 18);
+}
+
+@media (min-width: 750px) {
+
+    #div-logo {
+
+        margin-top: 2%;
+        margin-bottom: 1%;
+
+    }
+
+    .my-font {
+
+        line-height: 120%;
+        font-size: clamp(1.5rem, 8vw, 2.5rem);
+    }
+
+    img {
+
+        width: 50%;
+
+    }
+
+    .action-btn a {
+
+        padding: 1% 5.5%;
+        font-size: 1.5rem;
+
+    }
+
+    botton {
+
+        margin: 0 auto;
+    }
+
+
+}
+
+@media (max-width: 730px) {
+
+
+    .my-font {
+
+        font-size: clamp(1.5rem, 10.5vw, 4rem);
+        line-height: 120%;
+    }
+
+    .div-entrar a {
+        font-size: clamp(1.5rem, 5vw, 2rem);
+    }
+
+
+    .action-btn a {
+
+
+        font-size: clamp(1.5rem, 5vw, 2rem);
+
+    }
+
+    img {
+
+        width: 60%;
+
+    }
+
+
+}

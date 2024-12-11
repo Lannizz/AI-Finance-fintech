@@ -1,0 +1,428 @@
+body {
+    font-family: "Albert Sans", sans-serif;
+    margin-top: 0;
+    padding-bottom: 12%;
+    color: #333;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.navbar {
+
+    display: none;
+}
+
+.welcome p {
+
+    margin: 0;
+}
+
+
+.user-icon {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+}
+
+#conta {
+
+    border-radius: 50px;
+    background-color: #11400B;
+    width: 40%;
+    padding: 5%;
+}
+
+.card-conta {
+
+
+    border-radius: 25px;
+    height: 25vh;
+    width: 100vw;
+    font-size: clamp(1rem, 6vw, 2rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2%;
+    margin: 5%;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 5px rgba(151, 255, 163, 0.3);
+    transition: box-shadow 0.6s ease-in-out;
+
+}
+
+
+.card-conta[data-card="1"] {
+    background-image: linear-gradient(to top, #1f8b33, #19be56, #00fc54);
+}
+
+.card-conta[data-card="2"] {
+    background-color: rgb(136, 0, 148);
+    color: #fff;
+
+}
+
+.card-conta:hover {
+    box-shadow: 8px 8px 10px rgba(1, 83, 12, 0.2);
+}
+
+
+
+.account-btn p {
+
+
+    font-size: clamp(1rem, 7vw, 5rem);
+    font-family: "Inter", sans-serif;
+    font-weight: 581;
+
+
+
+}
+
+.balance {
+    font-size: clamp(1rem, 10vw, 5rem);
+    color: #f4f4f4;
+    margin-bottom: 1%;
+    margin-top: 5%;
+}
+
+
+.img-conta {
+
+    width: 40px;
+    border-radius: 40px;
+
+}
+
+.account-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+
+.card-transacoes {
+
+    background-image: linear-gradient(to top, #11400B, #07740E);
+    border-radius: 25px;
+    width: 80%;
+    height: 15vh;
+    color: #f4f4f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+
+
+}
+
+.dashboard-transacoes {
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr;
+    align-items: center;
+
+}
+
+.dashboard-transacoes p {
+
+    font-size: clamp(1.1rem, 5vw, 2rem);
+    white-space: nowrap;
+}
+
+
+.icon-arrow {
+
+    height: 50%;
+}
+
+.icones-servicos {
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+.icones-servicos ul {
+    display: contents;
+    grid-column: 1 / -1;
+
+}
+
+
+.icones-servicos li {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.icones-servicos img {
+    width: 80%;
+
+    background-color: #11400B;
+    color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10%;
+    border-radius: 50px;
+    transition: box-shadow 0.6s ease-in-out;
+}
+
+.icones-servicos img:hover {
+
+    box-shadow: 8px 8px 10px rgba(17, 153, 7, 0.267);
+}
+
+.icones-servicos span {
+   
+    display: block;
+    
+}
+
+.bottom-nav {
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+    background-color: #075e24;
+    bottom: 0;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 12%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+}
+
+.bottom-nav ul {
+    display: contents;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.bottom-nav li {
+    text-align: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#adicionar {
+
+    border-radius: 50px;
+    width: 85%;
+    background-image: linear-gradient(to top, #07740E, #0DDA1A);
+    z-index: 50;
+    margin-top: 10%;
+}
+
+.bottom-nav img {
+
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    padding: 5%;
+
+
+    transition: box-shadow 0.6s ease-in-out;
+}
+
+.bottom-nav img:hover {
+    border-radius: 50px;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.336);
+}
+
+.credit-card {
+    text-align: justify;
+    padding: 5%;
+    line-height: 30px;
+
+}
+
+
+
+/*  animações ---------------------- */
+
+
+.corousel {
+    width: 100%;
+
+    overflow: hidden;
+    
+    position: relative;
+    
+}
+
+.card-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+    width: 200%;
+    
+}
+
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    background-color: transparent;
+    color: rgba(32, 255, 73, 0.548);
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 2.5em;
+    padding: 5px;
+    
+}
+
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+/* midia query */
+
+
+body {
+
+    padding: 0;
+}
+
+@media (min-width: 500px) {
+
+    header {
+
+        justify-content: space-between;
+        padding: 2% 11%;
+    }
+
+
+    .welcome {
+        display: none;
+        font-size: 1.5rem;
+    }
+
+    .user-icon {
+        display: none;
+    }
+
+    #conta {
+
+        width: 50%;
+
+    }
+
+
+    .card-conta {
+
+        height: 5%;
+        width: 100%;
+        font-size: clamp(0.5rem, 2vw, 1rem);
+        padding: 1%;
+        flex-direction: column-reverse;
+    }
+
+    .balance {
+
+        font-size: clamp(1rem, 5vw, 4rem);
+        color: #f4f4f4;
+        margin-bottom: 10%;
+        margin-top: 0;
+
+    }
+
+
+
+    .prev,
+    .next {
+
+        top: 50%;
+        transform: translateY(-60%);
+
+
+    }
+
+
+
+    .account-btn p {
+
+
+        font-size: clamp(1rem, 5vw, 3rem);
+        font-family: "Inter", sans-serif;
+        font-weight: 581;
+        margin: 0;
+
+
+    }
+
+
+
+    .card-transacoes {
+
+        margin: 0 auto 5%;
+        width: 50%;
+    }
+
+
+    .icones-servicos img {
+
+        padding: 5%;
+        width: 25%;
+        border-radius: 50%;
+    }
+
+    .icones-servicos li span {
+        margin-top: 5%;
+        font-size: 1.5rem;
+    }
+
+    .animation-credit {
+
+        width: 30%;
+        margin: auto;
+    }
+
+    .bottom-nav {
+
+        display: none;
+        
+
+    }
+}
